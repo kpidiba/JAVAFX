@@ -15,3 +15,4 @@
   ```
 
 - create controller class and go to scene view > controller skeleton and past it in the controller and give the name in the scene
+- check configuration launch.json and settings.json for errors
