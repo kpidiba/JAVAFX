@@ -1,0 +1,16 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\java-libraries\\javafx-sdk-20.0.1\\lib\\javafx.base.jar",
+        "c:\\java-libraries\\javafx-sdk-20.0.1\\lib\\javafx.controls.jar",
+        "c:\\java-libraries\\javafx-sdk-20.0.1\\lib\\javafx.fxml.jar",
+        "c:\\java-libraries\\javafx-sdk-20.0.1\\lib\\javafx.graphics.jar",
+        "c:\\java-libraries\\javafx-sdk-20.0.1\\lib\\javafx.media.jar",
+        "c:\\java-libraries\\javafx-sdk-20.0.1\\lib\\javafx.swing.jar",
+        "c:\\java-libraries\\javafx-sdk-20.0.1\\lib\\javafx.web.jar",
+        "c:\\java-libraries\\javafx-sdk-20.0.1\\lib\\javafx-swt.jar",
+        "c:\\Users\\kpidi\\Downloads\\Compressed\\jar_files\\materialfx-11.16.1.jar"
+    ]
+}
