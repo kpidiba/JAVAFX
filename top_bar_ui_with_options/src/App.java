@@ -9,10 +9,9 @@ public class App extends Application {
     public void start(Stage primaryStage) {
 
         try {
-
             Parent root = FXMLLoader.load(getClass().getResource("scene.fxml"));
             Scene scene = new Scene(root);
-            primaryStage.setTitle("WEBVIEW RENDER");
+            primaryStage.setTitle("SIDE BAR WITH OPTIONS");
             primaryStage.setScene(scene);
             primaryStage.show();
         } catch (Exception e) {
