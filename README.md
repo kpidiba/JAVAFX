@@ -13,6 +13,18 @@ les défauts de ces derniers et fournir de nouvelles fonctionnalités
 
 Le cycle de sortie d'une nouvelle version de JavaFX correspond à celui de Java, soit tous les 6 mois.
 
+### RESSOURCES
+
+- [GitHub - mhrimaz/AwesomeJavaFX: A curated list of awesome JavaFX libraries, books, frameworks, etc...](https://github.com/mhrimaz/AwesomeJavaFX) 
+
+## Scene Builder: l'outil de conception d'interfaces
+
+**Scene Builder** est un [outil interactif de conception d'interface graphique](https://fr.wikipedia.org/wiki/Constructeur_d%27interface_graphique "Constructeur d'interface graphique") pour JavaFX. Il permet de créer des interfaces utilisateurs rapidement et sans avoir besoin de [coder](https://fr.wikipedia.org/wiki/Programmation_informatique "Programmation informatique"): il en résulte des fichiers au format [FXML](https://fr.wikipedia.org/wiki/FXML "FXML") qui sont ensuite chargés par le programme pour afficher une interface graphique à ses utilisateurs.
+
+Développé initialement par Oracle et sous le nom JavaFX Scene Builder[5](https://fr.wikipedia.org/wiki/JavaFX#cite_note-5), son code source a été publié en [open source](https://fr.wikipedia.org/wiki/Open_source "Open source") à partir de sa version 2.0[6](https://fr.wikipedia.org/wiki/JavaFX#cite_note-6).
+
+Depuis, le logiciel est principalement développé et soutenu par la société [Gluon](https://fr.wikipedia.org/w/index.php?title=Gluon_(entreprise)&action=edit&redlink=1 "Gluon (entreprise) (page inexistante)")[7](https://fr.wikipedia.org/wiki/JavaFX#cite_note-7).
+
 ### COMPOSANTS
 
 JavaFX est composé des 7 modules suivants:
@@ -27,29 +39,7 @@ JavaFX est composé des 7 modules suivants:
 - **javafx.swing**: Définit l'API qui fournit le support d’interopérabilité entre JavaFX et [Swing](https://fr.wikipedia.org/wiki/Swing_(Java) "Swing (Java)")
 - **javafx.web**: Définit l'API dédié à l'affichage de contenu web (notamment un éditeur HTML et un moteur de rendu de pages web basé sur [WebKit](https://fr.wikipedia.org/wiki/WebKit "WebKit"))
 
-### GENERATE JAR VS CODE
-
-- CLIQUER SUR EXPORT JAR FILE
-
-- COMMAND TO LAUNCH IT
-
-```bash
-JAVA -jar --module-path /path/to/JavaFX/lib --add-modules=javafx.controls jar_file_name.jar
-```
-
-- LAUNCH4j install
-
-- specify output file,jar file,in JRE -> version ,JVM options( --enable-preview --module-path C:/javafx-sdk-20.0.1/lib --add-modules=javafx.controls,javafx.media,javafx.fxml,javafx.graphics )
-
-## Scene Builder: l'outil de conception d'interfacesArticle détaillé : [Scene Builder](https://fr.wikipedia.org/wiki/Scene_Builder "Scene Builder").
-
-**Scene Builder** est un [outil interactif de conception d'interface graphique](https://fr.wikipedia.org/wiki/Constructeur_d%27interface_graphique "Constructeur d'interface graphique") pour JavaFX. Il permet de créer des interfaces utilisateurs rapidement et sans avoir besoin de [coder](https://fr.wikipedia.org/wiki/Programmation_informatique "Programmation informatique"): il en résulte des fichiers au format [FXML](https://fr.wikipedia.org/wiki/FXML "FXML") qui sont ensuite chargés par le programme pour afficher une interface graphique à ses utilisateurs.
-
-Développé initialement par Oracle et sous le nom JavaFX Scene Builder[5](https://fr.wikipedia.org/wiki/JavaFX#cite_note-5), son code source a été publié en [open source](https://fr.wikipedia.org/wiki/Open_source "Open source") à partir de sa version 2.0[6](https://fr.wikipedia.org/wiki/JavaFX#cite_note-6).
-
-Depuis, le logiciel est principalement développé et soutenu par la société [Gluon](https://fr.wikipedia.org/w/index.php?title=Gluon_(entreprise)&action=edit&redlink=1 "Gluon (entreprise) (page inexistante)")[7](https://fr.wikipedia.org/wiki/JavaFX#cite_note-7).
-
-### **SETUP**
+### **INSTALLATION**
 
 To properly set up your JavaFX project environment, follow these steps:
 
@@ -144,3 +134,22 @@ public class App extends Application {
 - Create a scene and add it to the source code as per your application requirements.
 - Navigate to `View` and select `Show Sample Controller Skeleton`.
 - Add the controller class to the view to manage the application logic.
+
+### GENERATE JAR VS CODE
+
+- CLIQUER SUR EXPORT JAR FILE
+
+- COMMAND TO LAUNCH IT
+
+```bash
+JAVA -jar --module-path "/path/to/JavaFX/lib" --add-modules=javafx.controls jar_file_name.jar
+```
+
+## Using Launch4j
+
+- Install Launch4j.
+- Specify the following:
+  - Output file.
+  - JAR file.
+  - JRE version.
+  - JVM options (`--enable-preview --module-path C:/javafx-sdk-20.0.1/lib --add-modules=javafx.controls,javafx.media,javafx.fxml,javafx.graphics`).
