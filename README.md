@@ -49,33 +49,52 @@ Développé initialement par Oracle et sous le nom JavaFX Scene Builder[5](https
 
 Depuis, le logiciel est principalement développé et soutenu par la société [Gluon](https://fr.wikipedia.org/w/index.php?title=Gluon_(entreprise)&action=edit&redlink=1 "Gluon (entreprise) (page inexistante)")[7](https://fr.wikipedia.org/wiki/JavaFX#cite_note-7).
 
-### SETUP
+### **SETUP**
 
-- javafx support (extension)
+To properly set up your JavaFX project environment, follow these steps:
 
-- fxml viewer (extension)
+1. **Install Necessary Extensions:**
+   
+   - Ensure you have the following extensions installed in your development environment:
+     - JavaFX Support
+     - FXML Viewer
+     - Java Extension Pack
 
-- java extension pack (extension)
+2. **Install Scene Builder:**
+   
+   - Download the latest version of Scene Builder from [Gluon's official website](https://gluonhq.com/scene-builder-17-release/) and install it.
 
-- install scenebuilder ([Scene Builder 17 release - Gluon](https://gluonhq.com/scene-builder-17-release/)) 
+3. **Download JDK and SDK:**
+   
+   - Download the JavaFX SDK for x64 architecture from [Gluon's website](https://gluonhq.com/products/javafx/).
+   - Extract the downloaded SDK to `C:/` and select the second folder during extraction.
 
-- download  from https://gluonhq.com/products/javafx/ sdk x64 and extract on C:/ choose second folder
+4. **Create Java Project:**
+   
+   - Start by creating a new Java project without any build tools.
 
-- create java project -> no build tools
+5. **Configure Project Settings:**
+   
+   - Navigate to the main directory of your Java project, and it will appear in the sidebar or at the bottom of the IDE.
+   - Click on "References Libraries" and add all the necessary SDK libraries for JavaFX.
 
-- go to main and java project will appears on side bar > bottom
+6. **Add Run Configuration:**
+   
+   - Click on "Run" and then "Add Configuration" to configure the run settings.
 
-- click on referencies libraries add button and choose all sdk lib for javafx
-
-- Run -> add configuration
-
-- go to documentation javax - netbeans search VM options and copy paste in
+7. **Set VM Options:**
+   
+   - Go to the documentation for `javax` in NetBeans and search for VM options.
+   - Copy and paste the following VM options
 
 ```java
-"vmArgs": "--module-path \"C:/ javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+"vmArgs": "--module-path \"C:/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
 ```
 
-- source code
+**Source Code:**
+
+- Use the provided Java source code to initialize a basic JavaFX application. Ensure that you replace the existing code with the provided one.
+- This code sets up a simple "Hello World" application using JavaFX.
 
 ```java
 import javafx.application.Application;
@@ -120,8 +139,8 @@ public class App extends Application {
 }
 ```
 
-- create a scene and add it in source
+**Create Scene and Controller:**
 
-- go to view> show sample controller sekeleton
-
-- add controller class to the view
+- Create a scene and add it to the source code as per your application requirements.
+- Navigate to `View` and select `Show Sample Controller Skeleton`.
+- Add the controller class to the view to manage the application logic.

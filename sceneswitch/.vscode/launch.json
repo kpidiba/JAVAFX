@@ -4,6 +4,14 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "sceneswitch_2755b926"
+        },
         {
             "type": "java",
             "name": "Current File",
@@ -16,7 +24,7 @@
             "request": "launch",
             "mainClass": "App",
             "projectName": "sceneswitch_c6dd6f05",
-            "vmArgs": "--module-path \"C:/java-libraries/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.graphics,javafx.fxml "
+            "vmArgs": "--module-path \"C:/java-libraries/javafx-sdk-17.0.11/lib\" --add-modules javafx.controls,javafx.graphics,javafx.fxml "
         }
     ]
 }

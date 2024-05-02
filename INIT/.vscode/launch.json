@@ -6,24 +6,17 @@
     "configurations": [
         {
             "type": "java",
-            "name": "AppI",
-            "request": "launch",
-            "mainClass": "AppI",
-            "projectName": "INIT_bf11536"
-        },
-        {
-            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
         },
         {
             "type": "java",
-            "name": "App",
+            "name": "AppI",
             "request": "launch",
-            "mainClass": "App",
-            "projectName": "INIT_bf11536",
-            "vmArgs": "--module-path \"C:/java-libraries/javafx-sdk-20.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+            "mainClass": "AppI",
+            "projectName": "INIT_3287216a",
+            "vmArgs": "--module-path \"C:/java-libraries/javafx-sdk-17.0.11/lib\" --add-modules javafx.controls,javafx.graphics,javafx.fxml,javafx.web"
         }
     ]
 }
