@@ -142,14 +142,5 @@ public class App extends Application {
 - COMMAND TO LAUNCH IT
 
 ```bash
-JAVA -jar --module-path "/path/to/JavaFX/lib" --add-modules=javafx.controls jar_file_name.jar
+JAVA -jar --module-path "/path/to/JavaFX/lib" --add-modules=javafx.controls jar_file_name.jar 
 ```
-
-## Using Launch4j
-
-- Install Launch4j.
-- Specify the following:
-  - Output file.
-  - JAR file.
-  - JRE version.
-  - JVM options (`--enable-preview --module-path C:/javafx-sdk-20.0.1/lib --add-modules=javafx.controls,javafx.media,javafx.fxml,javafx.graphics`).

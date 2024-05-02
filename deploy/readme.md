@@ -1,6 +1,6 @@
 # DEPLOY JAVAFX PROJECT
 
-1.  Launch4j
+1. Launch4j
 - Install [Launch4j](https://launch4j.sourceforge.net/).
 - Specify the following:
   - Output file.
