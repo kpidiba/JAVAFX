@@ -129,6 +129,16 @@ public class App extends Application {
 }
 ```
 
+### LAUNCH WITH SDK
+
+- Just Copy the sdk content to new folder
+
+- Create Class with all javafx code
+
+- create Launcher with will configuration data
+
+
+
 **Create Scene and Controller:**
 
 - Create a scene and add it to the source code as per your application requirements.
