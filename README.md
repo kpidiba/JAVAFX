@@ -137,8 +137,6 @@ public class App extends Application {
 
 - create Launcher with will configuration data
 
-
-
 **Create Scene and Controller:**
 
 - Create a scene and add it to the source code as per your application requirements.
