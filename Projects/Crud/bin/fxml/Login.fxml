@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
@@ -13,13 +14,12 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoginController">
    <left>
       <AnchorPane prefHeight="400.0" prefWidth="250.0" style="-fx-background-color: #263F76;" BorderPane.alignment="CENTER">
          <children>
-            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="119.0" layoutX="16.0" layoutY="84.0" stroke="BLACK" strokeType="INSIDE" width="218.0" />
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="101.0" prefHeight="18.0" prefWidth="245.0" text="KBRIGHTCODER" textAlignment="CENTER" textFill="WHITE">
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="119.0" layoutX="16.0" layoutY="141.0" stroke="BLACK" strokeType="INSIDE" width="218.0" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="158.0" prefHeight="18.0" prefWidth="245.0" text="KBRIGHTCODER" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="17.0" />
                </font>
@@ -27,7 +27,7 @@
                   <DropShadow />
                </effect>
             </Label>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="158.0" prefHeight="18.0" prefWidth="245.0" text="SOFTWARE ENGINEER" textAlignment="CENTER" textFill="WHITE">
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="2.0" layoutY="215.0" prefHeight="18.0" prefWidth="245.0" text="SOFTWARE ENGINEER" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Fira Code Light" size="17.0" />
                </font>
@@ -35,7 +35,7 @@
                   <DropShadow />
                </effect>
             </Label>
-            <Line endX="100.0" layoutX="125.0" layoutY="144.0" startX="-100.0" stroke="WHITE" />
+            <Line endX="100.0" layoutX="125.0" layoutY="201.0" startX="-100.0" stroke="WHITE" />
             <Label alignment="CENTER" contentDisplay="CENTER" layoutX="3.0" layoutY="351.0" prefHeight="18.0" prefWidth="245.0" text="Copyright (c). All Rights Reserved" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="Calibri Light" size="10.0" />
@@ -57,13 +57,19 @@
             </ImageView>
             <TextField fx:id="usernameTextField" alignment="CENTER" layoutX="85.0" layoutY="168.0" prefHeight="31.0" prefWidth="180.0" promptText="NOM D' UTILISATEUR">
                <font>
-                  <Font name="Arial" size="12.0" />
+                  <Font name="Roboto Black" size="12.0" />
                </font>
             </TextField>
-            <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="85.0" layoutY="231.0" prefHeight="31.0" prefWidth="180.0" promptText="MOT DE PASSE" />
-            <Button fx:id="connexionButton" layoutX="114.0" layoutY="298.0" mnemonicParsing="false" onAction="#onClickConnexion" prefHeight="39.0" prefWidth="115.0" style="-fx-background-color: #01B334;" text="CONNEXION">
+            <PasswordField fx:id="passwordTextField" alignment="CENTER" layoutX="85.0" layoutY="231.0" prefHeight="31.0" prefWidth="180.0" promptText="MOT DE PASSE">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
                <font>
-                  <Font name="Arial Bold" size="13.0" />
+                  <Font name="Roboto Black" size="12.0" />
+               </font></PasswordField>
+            <Button fx:id="connexionButton" layoutX="114.0" layoutY="298.0" mnemonicParsing="false" onAction="#onClickConnexion" prefHeight="39.0" prefWidth="115.0" stylesheets="@../style/style.css" text="CONNEXION" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="13.0" />
                </font>
             </Button>
          </children>

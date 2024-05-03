@@ -1,0 +1,14 @@
+.button{
+    -fx-background-color: rgb(47, 131, 188);
+    -fx-effect: dropshadow(three-pass-box, rgb(19, 85, 129), 4, 0, 4, 4);
+}
+
+.button:hover{
+    -fx-background-color: rgb(62, 159, 223);
+}
+
+.button:pressed{
+    -fx-translate-x: 4px;
+    -fx-translate-y: 4px;
+    -fx-effect: dropshadow(three-pass-box, rgb(19, 85, 129), 0, 0, 0, 0);
+}
