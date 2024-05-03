@@ -16,6 +16,9 @@ Le cycle de sortie d'une nouvelle version de JavaFX correspond à celui de Java,
 ### RESSOURCES
 
 - [GitHub - mhrimaz/AwesomeJavaFX: A curated list of awesome JavaFX libraries, books, frameworks, etc...](https://github.com/mhrimaz/AwesomeJavaFX) 
+- [Cyber Developer - YouTube](https://www.youtube.com/@CyberDeveloperUI) 
+- [Random code - YouTube](https://www.youtube.com/@Randomcode_0) 
+- [Kensoft PH - YouTube](https://www.youtube.com/@KENSOFTPH) 
 
 ## Scene Builder: l'outil de conception d'interfaces
 
@@ -24,6 +27,20 @@ Le cycle de sortie d'une nouvelle version de JavaFX correspond à celui de Java,
 Développé initialement par Oracle et sous le nom JavaFX Scene Builder[5](https://fr.wikipedia.org/wiki/JavaFX#cite_note-5), son code source a été publié en [open source](https://fr.wikipedia.org/wiki/Open_source "Open source") à partir de sa version 2.0[6](https://fr.wikipedia.org/wiki/JavaFX#cite_note-6).
 
 Depuis, le logiciel est principalement développé et soutenu par la société [Gluon](https://fr.wikipedia.org/w/index.php?title=Gluon_(entreprise)&action=edit&redlink=1 "Gluon (entreprise) (page inexistante)")[7](https://fr.wikipedia.org/wiki/JavaFX#cite_note-7).
+
+## Manually Adding External Dependencies Scene Builder
+
+If you are unable to use Maven to manage dependencies in your Java project and need to add JAR files manually, follow these steps:
+
+1. **Download the JAR File**: Obtain the JAR file for the desired dependency, such as `com.ultramixer:laddafx:0.2.1`, from a repository like Maven Central or the project's website.
+
+2. **Add JAR to Your Project**: Place the downloaded JAR file in a directory within your project, such as `lib/`.
+
+3. **Add JAR to IntelliJ IDEA**:
+   
+   - Click on the parameter icon located on the right of the Library section.
+   - In the search field, type "JAR/FXML Manager" and select it.
+   - Follow the prompts to locate and add the JAR file you downloaded to your project.
 
 ### COMPOSANTS
 
