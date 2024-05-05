@@ -24,6 +24,7 @@ public class App extends Application {
         });
         Scene scene = new Scene(root);
         scene.setFill(Color.TRANSPARENT);
+        arg0.setTitle("SETTINGS");
         arg0.setScene(scene);
         arg0.show();
     }

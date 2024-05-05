@@ -20,6 +20,14 @@ Le cycle de sortie d'une nouvelle version de JavaFX correspond à celui de Java,
 - [Random code - YouTube](https://www.youtube.com/@Randomcode_0) 
 - [Kensoft PH - YouTube](https://www.youtube.com/@KENSOFTPH) 
 
+### ICONS
+
+- https://www.flaticon.com/ 
+
+- https://icones8.fr/
+
+- 
+
 ## Scene Builder: l'outil de conception d'interfaces
 
 **Scene Builder** est un [outil interactif de conception d'interface graphique](https://fr.wikipedia.org/wiki/Constructeur_d%27interface_graphique "Constructeur d'interface graphique") pour JavaFX. Il permet de créer des interfaces utilisateurs rapidement et sans avoir besoin de [coder](https://fr.wikipedia.org/wiki/Programmation_informatique "Programmation informatique"): il en résulte des fichiers au format [FXML](https://fr.wikipedia.org/wiki/FXML "FXML") qui sont ensuite chargés par le programme pour afficher une interface graphique à ses utilisateurs.
