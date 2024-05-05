@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
 <?import com.jfoenix.controls.JFXSlider?>
 <?import com.jfoenix.controls.JFXToggleButton?>
 <?import javafx.scene.control.Label?>
@@ -11,31 +13,26 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="429.0" style="-fx-background-color: rgba(0, 0, 0, 0);;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <AnchorPane fx:id="topBar" prefHeight="76.0" prefWidth="429.0" style="-fx-background-color: #3D4946;">
-         <children>
-            <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="47.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/icons8-paramètres-50.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="149.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/icons8-utilisateur-90.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="336.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/icons8-rééquilibrer-le-portefeuille-100.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="246.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/icons8-champion-100.png" />
-               </image>
-            </ImageView>
-         </children></AnchorPane>
-      <AnchorPane fx:id="user" layoutY="93.0" prefHeight="450.0" prefWidth="429.0" style="-fx-background-color: #3D4946;" />
-      <AnchorPane fx:id="stats" layoutX="2.0" layoutY="91.0" prefHeight="450.0" prefWidth="429.0" style="-fx-background-color: #3D4946;" />
+      <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="46.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-en-haut-90.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="150.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-en-haut-90.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="245.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-en-haut-90.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="337.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-en-haut-90.png" />
+         </image>
+      </ImageView>
       <AnchorPane fx:id="awards" layoutY="91.0" prefHeight="450.0" prefWidth="429.0" style="-fx-background-color: #3D4946;">
          <children>
             <Label layoutX="52.0" layoutY="44.0" text="TOUCH ENABLED" textFill="WHITE">
@@ -67,7 +64,51 @@
                </font>
             </Label>
             <JFXSlider layoutX="45.0" layoutY="298.0" prefHeight="16.0" prefWidth="338.0" />
+            <JFXCheckBox layoutX="52.0" layoutY="331.0" prefHeight="38.0" prefWidth="118.0" text="Auto Brightness" textFill="WHITE" />
+            <JFXButton buttonType="RAISED" layoutX="52.0" layoutY="386.0" prefHeight="34.0" prefWidth="118.0" style="-fx-background-color: #515D6D;" text="CANCEL" />
+            <JFXButton buttonType="RAISED" layoutX="259.0" layoutY="386.0" prefHeight="34.0" prefWidth="118.0" style="-fx-background-color: #eda678;" text="SAVE" />
          </children>
       </AnchorPane>
+      <AnchorPane fx:id="topBar" prefHeight="76.0" prefWidth="429.0" style="-fx-background-color: #3D4946;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="47.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-paramètres-50.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="149.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-utilisateur-90.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="336.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-rééquilibrer-le-portefeuille-100.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="38.0" fitWidth="38.0" layoutX="246.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icons8-champion-100.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane fx:id="stats" layoutX="2.0" layoutY="91.0" prefHeight="450.0" prefWidth="429.0" style="-fx-background-color: #3D4946;">
+         <children>
+            <ImageView fitHeight="147.0" fitWidth="143.0" layoutX="143.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/user-interface.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="129.0" layoutY="211.0" text="KPIDIBA D. F.-David" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="166.0" layoutY="249.0" text="Software Engineer" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light" size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
    </children>
 </AnchorPane>
