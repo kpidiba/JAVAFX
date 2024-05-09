@@ -1,6 +1,6 @@
 # 
 
-Setting UI Project with JavaFX
+# Setting UI Project with JavaFX
 
 This project is a user interface (UI) application developed using JavaFX. It incorporates components from the JFoenix library to enhance the user experience.
 
