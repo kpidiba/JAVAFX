@@ -9,14 +9,17 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="637.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppController">
    <children>
       <BorderPane prefHeight="200.0" prefWidth="200.0">
          <top>
             <HBox prefHeight="48.0" prefWidth="600.0" spacing="10.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
                <children>
-                  <Label prefHeight="59.0" prefWidth="81.0" text="Label" />
-                  <JFXButton prefHeight="48.0" prefWidth="110.0" text="Dashboard">
+                  <Label alignment="CENTER" prefHeight="48.0" prefWidth="51.0" text="MENU" textAlignment="CENTER">
+                     <font>
+                        <Font name="Raleway Medium" size="12.0" />
+                     </font></Label>
+                  <JFXButton prefHeight="48.0" prefWidth="110.0" styleClass="d" stylesheets="@../css/style.css" text="Dashboard">
                      <font>
                         <Font name="Roboto" size="12.0" />
                      </font>
@@ -29,7 +32,7 @@
                      </graphic>
                      
                   </JFXButton>
-                  <JFXButton prefHeight="48.0" prefWidth="112.0" text="Payement">
+                  <JFXButton prefHeight="48.0" prefWidth="112.0" styleClass="d" stylesheets="@../css/style.css" text="Payement">
                      <font>
                         <Font name="Roboto" size="12.0" />
                      </font>
@@ -41,7 +44,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton prefHeight="50.0" prefWidth="93.0" text="Report">
+                  <JFXButton prefHeight="50.0" prefWidth="93.0" styleClass="d" stylesheets="@../css/style.css" text="Report">
                      <font>
                         <Font name="Roboto" size="12.0" />
                      </font>
@@ -53,7 +56,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton prefHeight="50.0" prefWidth="93.0" text="Services">
+                  <JFXButton prefHeight="50.0" prefWidth="93.0" styleClass="d" stylesheets="@../css/style.css" text="Services">
                      <font>
                         <Font name="Roboto" size="12.0" />
                      </font>
