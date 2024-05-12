@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
@@ -14,13 +17,31 @@
          <left>
             <VBox prefHeight="600.0" prefWidth="231.0" BorderPane.alignment="CENTER">
                <children>
-                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <HBox alignment="CENTER" prefHeight="78.0" prefWidth="234.0" spacing="6.0">
                      <children>
-                        <Label text="DYNAMIC GRID PANE">
+                        <Label text="DYNAMIC " textFill="#aca0a0">
                            <font>
-                              <Font name="Roboto" size="18.0" />
+                              <Font name="Roboto Bold" size="18.0" />
                            </font>
                         </Label>
+                        <Label graphicTextGap="10.0" lineSpacing="10.0" text="GRID PANE" textFill="#2b2424">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="178.0" spacing="5.0" styleClass="search-box" stylesheets="@../../css/style.css">
+                     <VBox.margin>
+                        <Insets left="25.0" right="25.0" top="10.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField alignment="CENTER" minHeight="30.0" prefHeight="30.0" prefWidth="117.0" promptText="Rechercher" styleClass="transparent">
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </TextField>
+                        <Button mnemonicParsing="false" styleClass="search-button" text="Valider" />
                      </children>
                   </HBox>
                </children>
