@@ -4,6 +4,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
@@ -43,7 +44,7 @@
                         <Button mnemonicParsing="false" styleClass="search-button" text="Valider" />
                      </children>
                   </HBox>
-                  <VBox prefHeight="461.0" prefWidth="231.0">
+                  <VBox alignment="CENTER" prefHeight="402.0" prefWidth="232.0">
                      <children>
                         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
                            <children>
@@ -59,6 +60,7 @@
                               </Label>
                            </children>
                         </HBox>
+                        <ImageView fitHeight="160.0" fitWidth="208.0" pickOnBounds="true" preserveRatio="true" />
                      </children>
                   </VBox>
                </children>
