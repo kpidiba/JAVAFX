@@ -10,6 +10,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -27,7 +28,7 @@
                               <Font name="Roboto Bold" size="18.0" />
                            </font>
                         </Label>
-                        <Label graphicTextGap="10.0" lineSpacing="10.0" text="GRID PANE" textFill="#2b2424">
+                        <Label graphicTextGap="10.0" lineSpacing="10.0" text="GRID PANE" textFill="#534747">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -50,9 +51,10 @@
                            </font></Button>
                      </children>
                   </HBox>
-                  <VBox alignment="CENTER" prefHeight="417.0" prefWidth="268.0" styleClass="chosen-fruit-card">
+                  <HBox prefHeight="43.0" prefWidth="298.0" VBox.vgrow="ALWAYS" />
+                  <VBox alignment="CENTER" prefHeight="381.0" prefWidth="268.0" styleClass="chosen-fruit-card">
                      <children>
-                        <HBox alignment="CENTER" prefHeight="69.0" prefWidth="298.0" spacing="10.0">
+                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="268.0" spacing="10.0">
                            <children>
                               <Label text="TOMATO" textFill="WHITE">
                                  <font>
@@ -74,13 +76,20 @@
                            <children>
                               <Label prefHeight="18.0" prefWidth="43.0" text="Kg">
                                  <font>
-                                    <Font name="Roboto" size="12.0" />
+                                    <Font name="Roboto" size="14.0" />
                                  </font>
                               </Label>
-                              <ComboBox prefHeight="26.0" prefWidth="90.0" promptText="Selected" />
+                              <ComboBox prefHeight="26.0" prefWidth="90.0" promptText="Selected">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ComboBox>
                            </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="38.0" prefWidth="231.0" spacing="10.0">
+                        <HBox alignment="CENTER" prefHeight="31.0" prefWidth="268.0" spacing="10.0">
                            <children>
                               <Separator prefHeight="34.0" prefWidth="75.0" stylesheets="@../../css/style.css" />
                               <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="35.0" text="Or">
@@ -91,28 +100,72 @@
                               <Separator prefHeight="34.0" prefWidth="74.0" stylesheets="@../../css/style.css" />
                            </children>
                         </HBox>
-                        <HBox alignment="CENTER" prefHeight="50.0" prefWidth="248.0" spacing="20.0">
+                        <HBox alignment="CENTER" prefHeight="35.0" prefWidth="268.0" spacing="20.0">
                            <children>
-                              <Label prefHeight="18.0" prefWidth="39.0" text="Kg" />
+                              <Label prefHeight="18.0" prefWidth="39.0" text="Kg">
+                                 <font>
+                                    <Font name="Roboto" size="14.0" />
+                                 </font>
+                              </Label>
                               <ComboBox prefHeight="26.0" prefWidth="90.0" promptText="Selected" />
                            </children>
                         </HBox>
-                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="146.0" text="Add Cart">
+                        <Button mnemonicParsing="false" prefHeight="30.0" prefWidth="146.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="Add Cart">
                            <VBox.margin>
-                              <Insets top="10.0" />
+                              <Insets bottom="15.0" top="15.0" />
                            </VBox.margin>
+                           <font>
+                              <Font name="Roboto" size="12.0" />
+                           </font>
                         </Button>
                      </children>
                      <opaqueInsets>
                         <Insets />
                      </opaqueInsets>
                      <VBox.margin>
-                        <Insets left="15.0" right="15.0" top="20.0" />
+                        <Insets bottom="40.0" left="15.0" right="15.0" />
                      </VBox.margin>
                   </VBox>
                </children>
             </VBox>
          </left>
+         <center>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="47.0" prefWidth="562.0">
+                     <VBox.margin>
+                        <Insets left="20.0" right="20.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label prefHeight="23.0" prefWidth="80.0" text="Langue" textFill="#998d8d">
+                           <font>
+                              <Font name="Roboto" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label prefHeight="26.0" prefWidth="88.0" text=" ENGLISH" textFill="#998d8d">
+                           <font>
+                              <Font name="Roboto Black" size="18.0" />
+                           </font>
+                        </Label>
+                        <Pane prefHeight="48.0" prefWidth="261.0" />
+                        <Label prefHeight="24.0" prefWidth="72.0" text="Account" textFill="#998d8d">
+                           <font>
+                              <Font name="Roboto Black" size="18.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ImageView fitHeight="23.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../images/ic_cart.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
       </BorderPane>
    </children>
 </StackPane>
