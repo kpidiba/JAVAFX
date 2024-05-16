@@ -14,6 +14,8 @@ public class App extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("./fxml/main/app.fxml"));
         Scene scene = new Scene(root);
         arg0.setTitle("DYNAMIC GRID PANE");
+        arg0.setMinWidth(root.minWidth(-1));
+        arg0.setMinHeight(root.minHeight(-1));
         arg0.setScene(scene);
         arg0.show();
     }
