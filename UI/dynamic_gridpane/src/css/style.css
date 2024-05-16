@@ -17,3 +17,13 @@
     -fx-background-insets: 0 0 -1 0, 0, 1, 2;
     -fx-background-radius: 3px, 3px, 2px, 1px;
 }
+
+.chosen-fruit-card{
+    -fx-background-color: #33ba80;
+    -fx-background-radius: 30;
+}
+
+.deleviry-card{
+    -fx-background-color: #D3D3D3;
+    -fx-background-radius: 30;
+}
