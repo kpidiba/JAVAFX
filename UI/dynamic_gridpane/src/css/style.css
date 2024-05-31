@@ -27,3 +27,13 @@
     -fx-background-color: #D3D3D3;
     -fx-background-radius: 30;
 }
+
+.btn-button {
+    -fx-background-color: #007bff;
+    -fx-background-radius: 30;
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 18;
+    -fx-padding: 5;
+}
+
+
