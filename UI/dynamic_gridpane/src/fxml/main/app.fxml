@@ -174,17 +174,17 @@
                               <Insets left="20.0" right="20.0" top="10.0" />
                            </HBox.margin>
                         </HBox>
-                        <Pane prefHeight="110.0" prefWidth="82.0" />
+                        <Pane prefHeight="110.0" prefWidth="82.0" HBox.hgrow="ALWAYS" />
                         <HBox alignment="CENTER" prefHeight="113.0" prefWidth="256.0" style="-fx-background-color: #6F8DD2;" styleClass="deleviry-card" stylesheets="@../../css/style.css">
                            <children>
                               <VBox alignment="CENTER" prefHeight="130.0" prefWidth="147.0">
                                  <children>
-                                    <Label prefHeight="23.0" prefWidth="91.0" text="Free Delivery">
+                                    <Label prefHeight="23.0" prefWidth="91.0" text="Shopping online">
                                        <font>
                                           <Font name="Century" size="14.0" />
                                        </font>
                                     </Label>
-                                    <Label prefHeight="24.0" prefWidth="94.0" text="over 2000 FCFA " textFill="#665959">
+                                    <Label prefHeight="24.0" prefWidth="122.0" text="get your product fast" textFill="#665959">
                                        <font>
                                           <Font name="Century" size="12.0" />
                                        </font>
