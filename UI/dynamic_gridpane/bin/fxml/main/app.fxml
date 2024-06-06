@@ -53,23 +53,23 @@
                         <Button mnemonicParsing="false" prefHeight="32.0" prefWidth="63.0" styleClass="search-button" text="Valider" />
                      </children>
                   </HBox>
-                  <VBox alignment="CENTER" prefHeight="402.0" prefWidth="217.0" styleClass="chosen-fruit-card" stylesheets="@../../css/style.css">
+                  <VBox fx:id="chosenFruitCard" alignment="CENTER" prefHeight="402.0" prefWidth="217.0" styleClass="chosen-fruit-card" stylesheets="@../../css/style.css">
                      <children>
                         <HBox alignment="CENTER" prefHeight="87.0" prefWidth="238.0" spacing="10.0">
                            <children>
-                              <Label text="TOMATO" textFill="WHITE">
+                              <Label fx:id="fruitNameLabel" text="TOMATO" textFill="WHITE">
                                  <font>
                                     <Font name="Arial Bold" size="24.0" />
                                  </font>
                               </Label>
-                              <Label text="\$ 25" textFill="WHITE">
+                              <Label fx:id="fruitPriceLabel" text="\$ 25" textFill="WHITE">
                                  <font>
                                     <Font name="Calisto MT" size="24.0" />
                                  </font>
                               </Label>
                            </children>
                         </HBox>
-                        <ImageView fitHeight="156.0" fitWidth="197.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="fruitImg" fitHeight="156.0" fitWidth="197.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../images/peach.png" />
                            </image>
@@ -81,7 +81,7 @@
                                     <Font name="Arial Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <ComboBox prefHeight="32.0" prefWidth="119.0" />
+                              <ComboBox prefHeight="32.0" prefWidth="119.0" promptText="1" />
                            </children>
                         </HBox>
                         <HBox alignment="CENTER" prefHeight="23.0" prefWidth="231.0">
@@ -96,7 +96,7 @@
                                     <Font name="Arial Bold" size="12.0" />
                                  </font>
                               </Label>
-                              <ComboBox prefHeight="32.0" prefWidth="119.0" />
+                              <ComboBox prefHeight="32.0" prefWidth="119.0" promptText="Selected" />
                            </children>
                         </HBox>
                         <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="162.0" styleClass="btn-button" text="ADD CART">
@@ -207,21 +207,17 @@
                      </children></HBox>
                   <HBox alignment="CENTER" prefHeight="410.0" prefWidth="642.0">
                      <children>
-                        <ScrollPane prefHeight="410.0" prefWidth="531.0" styleClass="transparent" stylesheets="@../../css/style.css">
-                          <content>
-                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
-                                 <children>
-                                    <GridPane layoutX="2.0" layoutY="-1.0" prefHeight="45.0" prefWidth="62.0">
-                                      <rowConstraints>
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                      </rowConstraints>
-                                    </GridPane>
-                                 </children>
-                              </AnchorPane>
-                          </content>
+                        <ScrollPane id="scroll" fx:id="scroll" prefHeight="390.0" prefWidth="578.0" styleClass="transparent" stylesheets="@../../css/style.css">
                            <HBox.margin>
-                              <Insets top="10.0" />
+                              <Insets left="10.0" right="10.0" top="20.0" />
                            </HBox.margin>
+                           <content>
+                              <GridPane fx:id="grid" prefHeight="10.0" prefWidth="31.0">
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </content>
                         </ScrollPane>
                      </children>
                   </HBox>

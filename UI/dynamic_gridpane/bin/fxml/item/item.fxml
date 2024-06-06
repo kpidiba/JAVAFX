@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -10,18 +11,18 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="225.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="215.0" prefWidth="225.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
    <children>
-      <VBox alignment="CENTER" layoutX="63.0" layoutY="8.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox alignment="TOP_CENTER" layoutX="63.0" layoutY="8.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <HBox prefHeight="59.0" prefWidth="186.0">
+            <HBox prefHeight="50.0" prefWidth="186.0">
                <children>
-                  <Label prefHeight="62.0" prefWidth="126.0" text="Cherry">
+                  <Label fx:id="nameLabel" prefHeight="62.0" prefWidth="126.0" text="Cherry">
                      <font>
                         <Font name="Arial" size="18.0" />
                      </font>
                   </Label>
-                  <Label prefHeight="59.0" prefWidth="99.0" text="\$1000">
+                  <Label fx:id="priceLabel" prefHeight="59.0" prefWidth="99.0" text="\$1000">
                      <font>
                         <Font name="Arial Black" size="18.0" />
                      </font>
@@ -31,10 +32,10 @@
                   <Insets left="105.0" />
                </opaqueInsets>
                <VBox.margin>
-                  <Insets left="20.0" right="20.0" />
+                  <Insets left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
             </HBox>
-            <ImageView fitHeight="123.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="img" fitHeight="123.0" fitWidth="177.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../images/cherry.png" />
                </image>
@@ -42,4 +43,8 @@
          </children>
       </VBox>
    </children>
+   <styleClass>
+      <String fx:value="fruit-item" />
+      <String fx:value="shadow" />
+   </styleClass>
 </AnchorPane>

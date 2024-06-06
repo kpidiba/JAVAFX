@@ -36,4 +36,12 @@
     -fx-padding: 5;
 }
 
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+}
 
+.fruit-item{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 30;
+
+}
