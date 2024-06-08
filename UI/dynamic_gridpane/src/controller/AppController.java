@@ -18,6 +18,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import model.Fruit;
+import model.MyListener;
 
 public class AppController implements Initializable {
     @FXML
@@ -40,17 +41,91 @@ public class AppController implements Initializable {
 
     private List<Fruit> fruits = new ArrayList<>();
 
+    private MyListener myListener;
+
     private List<Fruit> getFruits() {
         List<Fruit> fruits = new ArrayList<>();
         Fruit fruit;
-        for (int i = 0; i < 20; i++) {
-            fruit = new Fruit();
-            fruit.setName("Mange");
-            fruit.setPrice(2.99);
-            fruit.setColor("6A7324");
-            fruit.setImgSrc("../images/kiwi.png");
-            fruits.add(fruit);
-        }
+        
+        //NOTE: KIWI
+        fruit = new Fruit();
+        fruit.setName("Mange");
+        fruit.setPrice(2.99);
+        fruit.setColor("6A7324");
+        fruit.setImgSrc("../images/kiwi.png");
+        fruits.add(fruit);
+
+        //NOTE: COCONUT
+        fruit = new Fruit();
+        fruit.setName("Coconut");
+        fruit.setPrice(3.5);
+        fruit.setColor("A7745B");
+        fruit.setImgSrc("../images/coconut.png");
+        fruits.add(fruit);
+
+        //NOTE: PEACH
+        fruit = new Fruit();
+        fruit.setName("Peach");
+        fruit.setPrice(1.99);
+        fruit.setColor("F16C31");
+        fruit.setImgSrc("../images/peach.png");
+        fruits.add(fruit);
+
+        //NOTE: GRAPES
+        fruit = new Fruit();
+        fruit.setName("Grapes");
+        fruit.setPrice(0.99);
+        fruit.setColor("291D36");
+        fruit.setImgSrc("../images/grapes.png");
+        fruits.add(fruit);
+
+        //NOTE: WATERMELON
+        fruit = new Fruit();
+        fruit.setName("Water Melon");
+        fruit.setPrice(2.99);
+        fruit.setColor("23371D");
+        fruit.setImgSrc("../images/watermelon.png");
+        fruits.add(fruit);
+
+        //NOTE: ORANGE
+        fruit = new Fruit();
+        fruit.setName("Orane");
+        fruit.setPrice(4.50);
+        fruit.setColor("FB5D03");
+        fruit.setImgSrc("../images/orange.png");
+        fruits.add(fruit);
+
+        //NOTE: STRAWBERRY
+        fruit = new Fruit();
+        fruit.setName("StrawBerry");
+        fruit.setPrice(0.99);
+        fruit.setColor("80080C");
+        fruit.setImgSrc("../images/strawberry.png");
+        fruits.add(fruit);
+
+        //NOTE:MANGO
+        fruit = new Fruit();
+        fruit.setName("Mango");
+        fruit.setPrice(2.99);
+        fruit.setColor("FFB605");
+        fruit.setImgSrc("../images/mango.png");
+        fruits.add(fruit);
+
+        //NOTE: CHERRY
+        fruit = new Fruit();
+        fruit.setName("Cherry");
+        fruit.setPrice(2.45);
+        fruit.setColor("5F060E");
+        fruit.setImgSrc("../images/cherry.png");
+        fruits.add(fruit);
+
+        //NOTE: BANANA
+        fruit = new Fruit();
+        fruit.setName("Banana");
+        fruit.setPrice(2.99);
+        fruit.setColor("E7C00f");
+        fruit.setImgSrc("../images/banana.png");
+        fruits.add(fruit);
         return fruits;
     }
 
@@ -64,19 +139,22 @@ public class AppController implements Initializable {
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
         fruits.addAll(getFruits());
-        if (!fruits.isEmpty()) {
-            choosenFruit(fruits.get(0));
-        }
+        choosenFruit(fruits.get(0));
+        myListener = new MyListener() {
+            @Override
+            public void onClickListener(Fruit fruit){
+                choosenFruit(fruit);
+            }
+        };
         int column = 0;
         int row = 1;
         try {
-
             for (Fruit fruit : fruits) {
                 FXMLLoader fxmlLoader = new FXMLLoader();
                 fxmlLoader.setLocation(getClass().getResource("../fxml/item/item.fxml"));
                 AnchorPane anchorPane = fxmlLoader.load();
                 ItemController itemController = fxmlLoader.getController();
-                itemController.setData(fruit);
+                itemController.setData(fruit,myListener);
                 grid.add(anchorPane, column, row);
                 if (++column == 2) {
                     column = 0;
